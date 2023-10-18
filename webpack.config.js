@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.(?:js|jsx|mjs|cjs)$/,
-        exclude: /node_modules/,
+        include: path.resolve(__dirname, 'src'),
         use: {
           loader: 'babel-loader',
           options: {
